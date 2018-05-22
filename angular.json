@@ -23,8 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "./node_modules/bootswatch/dist/cosmo/bootstrap.min.css"
+              "./node_modules/bootswatch/dist/cosmo/bootstrap.min.css",
+              "src/styles.css"
             ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.min.js"
@@ -53,7 +53,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "IBTimeTracker:build"
+            "browserTarget": "IBTimeTracker:build"/*,
+            "proxyConfig": "./proxy.conf.json"*/
           },
           "configurations": {
             "production": {

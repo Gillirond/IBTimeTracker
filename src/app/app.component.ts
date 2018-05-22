@@ -73,7 +73,7 @@ export class AppComponent implements OnInit {
     // ! for ng serve !
     //this.httpService.getData('../assets/projectList.json', (data:string[]) => this.projectList = data);
     // ! for ng build !
-    this.httpService.getData('./assets/projectList.json', (data:string[]) => this.projectList = data);
+    this.httpService.getData('http://localhost/IB Time Tracker/php/projectList.json', (data:string[]) => this.projectList = data);
   }
 
   startTask(name: string, project: string) {
